@@ -1,0 +1,13 @@
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\bin\Debug\desafio final.exe.config
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\bin\Debug\desafio final.exe
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\bin\Debug\desafio final.pdb
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\obj\Debug\desafio final.csproj.AssemblyReference.cache
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\obj\Debug\desafio final.csproj.SuggestedBindingRedirects.cache
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\obj\Debug\desafio_final.Properties.Resources.resources
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\obj\Debug\desafio final.csproj.GenerateResource.cache
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\obj\Debug\desafio final.csproj.CoreCompileInputs.cache
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\obj\Debug\desafio final.exe
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\obj\Debug\desafio final.pdb
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\obj\Debug\desafio_final.cotizadorExpress.resources
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\obj\Debug\desafio_final.historialCotizaciones.resources
+G:\Game Dev\C#\Projects\Practica\Final\desafio final\desafio final\obj\Debug\desafio_final.ingresoVendedor.resources
