@@ -203,16 +203,8 @@ namespace desafio_final
 
                 else
                 {
-                    cotizacionID++;
+                    
                     int cantidadVendida = Convert.ToInt32(txtCantidad.Text);
-
-                    prendaSeleccionada.PrecioUnitario = Convert.ToDouble(txtPrecioUnitario.Text);
-
-
-                    Cotizacion cotizacion = new Cotizacion(cotizacionID, DateTime.Now, codigo, prendaSeleccionada, cantidadVendida);
-
-                    double resultado = cotizacion.ObtenerResultadoCalculoCotizacion();
-                    resultadoCotizacion.Text = resultado.ToString("C");
 
                     // Verificar si hay suficiente stock disponible
                     int stockDisponible = tienda.ObtenerStock(prendaSeleccionada);
@@ -222,18 +214,26 @@ namespace desafio_final
                         MessageBox.Show("No se puede realizar una cotización sobre una cantidad de stock no disponible.");
 
                     }
-                    if (cantidadVendida <= 0)
+                    else if (cantidadVendida <= 0)
                     {
                         // Si no hay suficiente stock disponible, mostrar un mensaje de error
                         MessageBox.Show("No se pude realizar una cotizacion de 0 productos. Ingrese una cantidad de stock mayor a 0.");
 
                     }
+                    else {
+                        prendaSeleccionada.PrecioUnitario = Convert.ToDouble(txtPrecioUnitario.Text);
+                        cotizacionID++;
+                        Cotizacion cotizacion = new Cotizacion(cotizacionID, DateTime.Now, codigo, prendaSeleccionada, cantidadVendida);
+
+                        double resultado = cotizacion.ObtenerResultadoCalculoCotizacion();
+                        resultadoCotizacion.Text = resultado.ToString("C");
+                        tienda.ActualizarStock(prendaSeleccionada, cantidadVendida);
+                        historialCotizaciones.Add(cotizacion);
+                        ActualizarStock();
+                    }
 
 
-
-                    tienda.ActualizarStock(prendaSeleccionada, cantidadVendida);
-                    historialCotizaciones.Add(cotizacion);
-                    ActualizarStock();
+                    
                 }
             }
         }

@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CONTROLADOR\Cotizaciones.cs" />
+    <Compile Include="MODELO\Cotizaciones.cs" />
     <Compile Include="MODELO\Tienda.cs" />
     <Compile Include="MODELO\Vendedor.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

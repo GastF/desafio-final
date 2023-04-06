@@ -12,7 +12,6 @@ namespace desafio_final
         public enum TipoManga { Corta, Larga }
         public enum TipoCuello { Mao, Comun }
         public enum TipoPantalon { Comun, Chupin }
-
         public class Prenda
         {
             public CalidadPrenda Calidad { get; set; }
